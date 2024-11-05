@@ -1,5 +1,5 @@
 <div>
-    <label for="inputText">Enter text:</label>
+    <label for="inputText">Enter text:</label >
     <input type="text" id="inputText" [(ngModel)]="inputText" (input)="checkPalindrome()" />
     <div *ngIf="isPalindrome !== null">
       <strong>{{ isPalindrome ? 'It is a palindrome!' : 'Not a palindrome.' }}</strong>
