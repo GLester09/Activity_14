@@ -4,7 +4,7 @@ import { OddsumcalculatorComponent } from './oddsumcalculator.component';
 
 describe('OddsumcalculatorComponent', () => {
   let component: OddsumcalculatorComponent;
-  let fixture: ComponentFixture<OddsumcalculatorComponent>;
+  let fixture: ComponentFixture<OddsumcalculatorComponent >;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
