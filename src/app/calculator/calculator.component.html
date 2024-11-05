@@ -1,0 +1,14 @@
+<label for = "fnumber">Enter First Number</label>
+<input type="number" id = "fnumber" [(ngModel)]="fnumber">
+<br>
+<label for = "snumber">Enter Second Number</label>
+<input type="number" id = "snumber" [(ngModel)]="snumber">
+<br>
+
+<button (click)="calculate('add')">Add</button>
+<button (click)="calculate('subtract')">Subtract</button>
+<button (click)="calculate('multiply')">Multiply</button>
+<button (click)="calculate('divide')">Divide</button>
+<br>
+
+<h1>Total: {{answer}}</h1>

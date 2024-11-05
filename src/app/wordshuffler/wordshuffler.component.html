@@ -1,0 +1,15 @@
+<div class="shuffle-container">
+    <h2>Shuffle Letters of a Word</h2>
+  
+    <div class="input-section">
+      <label for="inputWord">Enter a word:</label>
+      <input type="text" id="inputWord" [(ngModel)]="inputWord" placeholder="Enter a word" />
+    </div>
+  
+    <button (click)="shuffleLetters()">Shuffle Letters</button>
+  
+    <div *ngIf="shuffledWord">
+      <h3>Shuffled Word: {{ shuffledWord }}</h3>
+    </div>
+  </div>
+  

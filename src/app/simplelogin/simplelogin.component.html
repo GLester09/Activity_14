@@ -1,0 +1,9 @@
+<div class="login-container">
+    <h3>Log in</h3>
+    <input [(ngModel)]="email" type="email" placeholder="Enter Email" required>
+    <br>
+    <input [(ngModel)]="password" type="password" placeholder="Enter Password" required>
+    <br>
+    <button (click)="login()">Login</button>
+    <p *ngIf="message">{{message}}</p>
+</div>

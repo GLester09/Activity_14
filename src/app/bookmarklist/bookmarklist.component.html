@@ -1,0 +1,12 @@
+<div>
+    <label for="url">Enter URL: </label>
+    <br>
+    <input type="text" id="url" [(ngModel)]="url" placeholder="(e.g., https:// codingexample.com)">
+    <br>
+    <button (click)="displayUrl()">Display URL</button>
+</div>
+
+<div *ngIf="displayedUrl"> 
+    <p>Link:</p>
+    <a href="displayedURL" target="_blank">{{displayedUrl}}</a>
+</div>
