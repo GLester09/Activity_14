@@ -12,7 +12,7 @@
       <input type="number" id="time" [(ngModel)]="time" placeholder="Enter time" />
     </div>
   
-    <button (click)="calculateSimpleInterest()">Calculate Simple Interest</button>
+    <button (click)="calculateSimpleInterest ()">Calculate Simple Interest</button>
   
     <div *ngIf="interest !== null">
       <h3>Simple Interest: Pesos{{ interest | number: '1.2-2' }}</h3>
