@@ -1,1 +1,20 @@
-<p>divisionchekcers works!</p>
+<div class="divisibility-container">
+    <h2>Divisibility Check</h2>
+  
+    <div>
+      <label for="firstNumber ">First Number:</label>
+      <input type="number" [(ngModel)]="firstNumber" id="firstNumber" placeholder="Enter the first number" />
+    </div>
+  
+    <div>
+      <label for="secondNumber">Second Number:</label>
+      <input type="number" [(ngModel)]="secondNumber" id="secondNumber" placeholder="Enter the second number" />
+    </div>
+
+    <button (click)="checkDivisibility()">Check Divisibility</button>
+  
+    <div *ngIf="resultMessage">
+      <h3>{{ resultMessage }}</h3>
+    </div>
+  </div>
+  

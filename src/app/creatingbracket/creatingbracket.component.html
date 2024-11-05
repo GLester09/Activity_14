@@ -1,1 +1,23 @@
-<p>creatingbracket works!</p>
+<div class="container">
+    <h2>Bracket Matcher</h2>
+    <textarea [(ngModel)]="inputText" (input)="checkBrackets()" rows="6" cols="60" placeholder="Enter code here with brackets..."></textarea>
+  
+    <div *ngIf="!isValid" class="error-message">
+      <p><strong>Error: Unmatched brackets detected!</strong></p>
+    </div>
+  
+    <div *ngIf="isValid && inputText.length > 0" class="success-message">
+      <p><strong>Brackets are properly matched!</strong></p>
+    </div>
+  
+    <div class="highlighted-text">
+      <p>
+        <span *ngFor="let char of inputText.split(''); let i = index" 
+              [ngClass]="{'highlight': matchedBrackets[i]}" 
+              [class.unmatched]="!matchedBrackets[i] && inputText[i] && '({['.includes(inputText[i])">
+          {{ char }}
+        </span>
+      </p>
+    </div>
+  </div>
+  

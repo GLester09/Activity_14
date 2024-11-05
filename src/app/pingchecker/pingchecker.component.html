@@ -1,1 +1,9 @@
-<p>pingchecker works!</p>
+<div class="container">
+    <H3>Check Ping</H3>
+    <form>
+        <label for="pingInput">Enter Ping:</label>
+        <input type="number" [(ngModel)]="ping" name="ping" id="pingInput">
+        <button (click)="checkPing()">Check</button>
+        <p *ngIf="result">{{result}}</p>
+    </form>
+</div>
