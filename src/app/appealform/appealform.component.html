@@ -1,0 +1,16 @@
+<form [formGroup]="appealForm" (ngSubmit)="onSubmit()">
+    <label for = "appealName">Appeal Name:</label>
+    <input id="appealName" type="text" formControlName = "appealName" class="form-control">
+    <div>
+        <br>
+        <label for="appealDescription">Appeal Description</label>
+        <br>
+        <textarea id="appealDescription" formControlName ="appealDescription" class="form-control">
+        </textarea>
+    </div>
+    <button type="submit" [disabled]="!appealForm.valid" class="btn btn-primary">Submit Appeal</button>
+</form>
+
+<div *ngIf="appealSent">
+    <p>Thank you for sending us your appeal, we will reach you as soon as possible!</p>
+</div>
