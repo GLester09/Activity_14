@@ -46,6 +46,16 @@ import { CurrencyformatterComponent } from './currencyformatter/currencyformatte
 import { RandomquotedisplayComponent } from './randomquotedisplay/randomquotedisplay.component';
 import { UppercasegreetingComponent } from './uppercasegreeting/uppercasegreeting.component';
 import { DivisioncheckerComponent } from './divisionchecker/divisionchecker.component';
+import { DailyjournalComponent } from './dailyjournal/dailyjournal.component';
+import { SimpleregisterComponent } from './simpleregister/simpleregister.component';
+import { SimpleflashlightComponent } from './simpleflashlight/simpleflashlight.component';
+import { AppealformComponent } from './appealform/appealform.component';
+import { GuesscolorComponent } from './guesscolor/guesscolor.component';
+import { DivisionchekcersComponent } from './divisionchekcers/divisionchekcers.component';
+import { DivisiontableComponent } from './divisiontable/divisiontable.component';
+import { CheckmbpsComponent } from './checkmbps/checkmbps.component';
+import { PingcheckerComponent } from './pingchecker/pingchecker.component';
+import { CreatingbracketComponent } from './creatingbracket/creatingbracket.component';
 
 const routes: Routes = [
   {path: 'display', component: DisplayhelloworldComponent},
@@ -88,6 +98,16 @@ const routes: Routes = [
   {path: 'randomquote', component:RandomquotedisplayComponent},
   {path: 'uppercasegreeting', component:UppercasegreetingComponent},
   {path: 'divisionchecker', component:DivisioncheckerComponent},
+  {path: 'dailyjournal', component:DailyjournalComponent},
+  {path: 'simpleregister', component:SimpleregisterComponent},
+  {path: 'simpleflashlight', component:SimpleflashlightComponent},
+  {path: 'appealform', component:AppealformComponent},
+  {path: 'guesscolor', component:GuesscolorComponent},
+  {path: 'divisioncheckers', component:DivisionchekcersComponent},
+  {path: 'divisiontable', component:DivisiontableComponent},
+  {path: 'checkmbps', component:CheckmbpsComponent},
+  {path: 'pingchecker', component:PingcheckerComponent},
+  {path: 'creatingbrackets', component:CreatingbracketComponent}
 ];
 
 @NgModule({

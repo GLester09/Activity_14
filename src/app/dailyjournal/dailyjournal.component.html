@@ -1,0 +1,16 @@
+<div class="daily-journy">
+    <h2>Daily Journal</h2>
+    <form>
+        <label>Enter today's date:</label>
+        <input type="date" [(ngModel)]="date">
+        <br>
+        <label>Write your Journal:</label>
+        <textarea [(ngModel)]="entry"></textarea>
+        <button (click)="saveEntry()">Save</button>
+    </form>
+<ul>
+    <li *ngFor="let entry of journal">
+        {{entry.date}}: {{entry.text}}
+    </li>
+</ul>
+</div>

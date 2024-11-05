@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DictionaryComponent } from './dictionary.component';
+import { CreatingbracketComponent } from './creatingbracket.component';
 
-describe('DictionaryComponent', () => {
-  let component: DictionaryComponent;
-  let fixture: ComponentFixture<DictionaryComponent>;
+describe('CreatingbracketComponent', () => {
+  let component: CreatingbracketComponent;
+  let fixture: ComponentFixture<CreatingbracketComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DictionaryComponent]
+      imports: [CreatingbracketComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DictionaryComponent);
+    fixture = TestBed.createComponent(CreatingbracketComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
