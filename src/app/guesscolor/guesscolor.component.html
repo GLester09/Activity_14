@@ -1,1 +1,9 @@
-<p>guesscolor works!</p>
+<div class="container">
+    <h2>Guess the Color</h2>
+    <form>
+        <label for="colorInput">Please Enter your desired color:</label>
+        <input type="text" [(ngModel)]="userColor" name="color" id="colorInput">
+        <button (click)="checkColor()">Guess!</button>
+        <p id="result">{{result}}</p>
+    </form>
+</div>
