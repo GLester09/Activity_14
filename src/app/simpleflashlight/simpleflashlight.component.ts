@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './simpleflashlight.component.css'
 })
 export class SimpleflashlightComponent {
+isFlashlightOn = false;
 
+toggleFlashlight(){
+  this.isFlashlightOn = !this.isFlashlightOn;
+}
 }
